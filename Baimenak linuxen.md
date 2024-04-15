@@ -10,6 +10,12 @@
   - [Ezaugarri bereziak - lsattr eta chattr](#ezaugarri-bereziak---lsattr-eta-chattr)
 - [Ariketak](#ariketak)
   - [Ariketa 1](#ariketa-1)
+  - [Ariketa 2](#ariketa-2)
+  - [Ariketa 3](#ariketa-3)
+  - [Ariketa 4](#ariketa-4)
+  - [Ariketa 5](#ariketa-5)
+  - [Ariketa 6](#ariketa-6)
+  - [Ariketa 7](#ariketa-7)
 
 ## Fitxategi eta direktorioen baimenak
 
@@ -161,21 +167,54 @@ chattr +a forga.txt
 # Ariketak
 ## Ariketa 1
 lotu dagokion baimenarekin:
-- 462
-- 123
-- 711
-- 333
-- 161
-- 765
-- 567
-- 101
-- 162
-- rwx--x--x
-- --x--w--wx
-- --x---x
-- -wx-wx-wx
-- r-xrw
-- rwxrw-r-x
-- --xrw-w-
-- r-rw-w-
-- -xrw--x
+- 462 r-rw-w
+- 123 --x--w--wx
+- 711 rwx--x--x
+- 333 -wx-wx-wx
+- 161 -xrw--x
+- 765 rwxrw-r-x
+- 567 r-xrw
+- 101 --x---x
+- 162 --xrw-w-
+
+## Ariketa 2
+Zein da fitxategi honen baimenen baimena modu oktalean?
+![alt text](image-1.png)
+ERANTZUNA: **464**
+
+## Ariketa 3
+Jarri hurrengo baimenak modu oktalean
+
+- r--r-xrw- 456
+- --xr-xr-- 154
+- r-------- 400
+- --------x 001
+- rwsr-xr-x 4755
+- rwxr-sr-x 2755
+- r--rw---t 1460
+
+## Ariketa 4
+Zer gertatuko da hurrengo agindua exekutatzerakoan?
+![alt text](image-2.png)
+**1. 'Whoami' komandoaren output-a file fitxategian gordeko da, fitxategiaren jabea izateagatik baimenek ez baitidate eragiten**
+
+## Ariketa 5
+Nola lortuko zenuke "file" artxiboaren baimenak ikusten den moduan aldatzeko?
+![alt text](image-3.png)
+ERANTZUNA:
+```bash
+chmod g+x file
+```
+## Ariketa 6
+Zortzitarrean zer baimen esleitu beharko dut artxiboak adierazitako baimenak izan ditzan lortzeko?
+![alt text](image-7.png)
+ERANTZUNA:
+```bash
+chmod 870 file
+```
+## Ariketa 7
+Honako baimen hauek konfiguratuta dituen fitxategi hau ezabatu ahal izango dut?
+![alt text](image-8.png)
+1. Bai
+2. **Ez**
+   
